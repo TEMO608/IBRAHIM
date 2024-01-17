@@ -1,10 +1,75 @@
+@media screen and (min-width: 1285px) {
+   
+    body{
+        font-size: 30px;
+    }    
+
+    .main__body__left{
+        width: 40%;
+        height:100%;
+        padding: 20px 0;
+    }
+
+    #Main__Body__Left__Box__DateName__Date__Defult{
+        display:block;
+        color: rgb(211, 129, 21);
+        font: italic bold 2.2em/30px Georgia, serif;
+        font-family: 'Old Standard TT', serif;
+        margin: 20px 0 40px 0;
+        
+        
+    }
+
+    #Main__Body__Left__Box__DateName__Name{
+        font: italic bold 2.5em/30px Georgia , serif;
+        letter-spacing: 2px;
+        text-transform: lowercase;
+       
+        
+    }
+    #Main__Body__Left__Box__DateName__Name *{ 
+        font-family: "BungeeSpice-Regular", sans-serif;
+        margin: 15px;
+        padding: 0 10px;
+    }
+
+    
+    .main__body__left__box__info__BoomClock__Date td{
+        
+        font: italic bold 2em/20px Georgia, serif;
+        font-family: 'Old Standard TT', serif;
+        padding: 30px;
+        transition: .6s ease;
+        
+    }
+
+    .footer{
+        min-height:45px;
+        padding: 20px 50px;
+        background-color: #111;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        width: 100%;
+        color: #fa0;
+
+    }
+
+  }
+
+
 @media screen and (max-width:1023px) {
 body{
     font-size: 25px;
+    /* background-color: red; */
 }    
 
 section{
     padding: 40px 0 10px 0;
+}
+.main{
+    width: 100%;
+    height: 97.5vh;
 }
 .main__body{
 
@@ -12,29 +77,31 @@ section{
 }
 .main__body__right{
     width: 100vw;
-    height: 40%;
+    height: 100%;
     
     
 }
+
 .main__body__left{
     width: 100%;
-    height:100%;
+    height:58%;
 }
 
 #Main__Body__Left__Box__DateName__Name{
-    font: italic bold 2em/50px Georgia, serif;
+    font: italic bold 2em/30px Georgia, serif;
     letter-spacing: 2px;
     text-transform: lowercase;
+    
+    
+}
+#Main__Body__Left__Box__DateName__Name *{
     font-family: 'Bungee Spice', sans-serif;
-    
-    
 }
 
 #main__body__left__box__info__Address{
     margin-top: 10px;
     font: italic 900 25px/20px Georgia, serif;
     
-
 }
 .main__body__left__box__info__BoomClock__Date td{
  
@@ -54,7 +121,15 @@ section{
     height: 100%;
     margin: 10px 0 ;
 }
-
+.footer{
+    min-height:30px;
+    padding: 10px 50px;
+    background-color: #111;
+    align-items: center;
+    width: 100%;
+    color: #fa0;
+    
+}
 
 
 }
@@ -63,8 +138,10 @@ section{
     body{
     font-size:12px; 
 }
+.main{
+    height: 97vh;
+}
 .main__body{
-
     flex-direction: column-reverse;
 }
 section{
@@ -72,7 +149,7 @@ section{
 }
 .main__body__left{
     width: 100%;
-    height:100%;
+    height:80%;
 }
 
 #Main__Body__Left__Box__DateName__Date__Defult{
@@ -101,10 +178,13 @@ section{
 }
 #main__body__left__box__info__Address{
     display: flex;
-    flex-shrink: unset;
+    flex-shrink: inherit;
     margin-top: 5px;
     font: italic 900 20px/20px Georgia, serif;
-
+}
+#main__body__left__box__info__Address p{
+    width: 100%;
+    text-align: center;
 }
 
 .main__body__right{
@@ -113,14 +193,13 @@ section{
     margin: auto;
         
 }
-
 .footer{
-    bottom: 0px;
-    height:20px;
+    min-height:20px;
     padding: 7px 50px;
     background-color: #111;
 
 }
+
 
 }
 

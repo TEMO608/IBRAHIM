@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@font-face {
+    font-family:"BungeeSpice-Regular";  
+    src: url(/fonts/Bungee_Spice/BungeeSpice-Regular.ttf);
+}
 * {
     font-family: sans-serif;
     padding: 0;
@@ -46,7 +49,7 @@ li:hover,li.active{
     padding: 2px 50px;
 }
 
-.logo{
+#logo{
     text-decoration: none;
     color: lightseagreen;
     text-transform: uppercase;
@@ -62,7 +65,7 @@ section{
 }
 
 .main{
-    width: 100vw;
+    width: 100%;
     height: 96vh;}
 .main ,.main__body
 ,.main__body__right{
@@ -110,25 +113,25 @@ font-family
     
 }
 #Main__Body__Left__Box__DateName__Name{
-    font: italic bold 3em/40px Georgia , serif;
+    font: italic bold 2.5em/30px Georgia , serif;
     letter-spacing: 2px;
     text-transform: lowercase;
     /* font-family: 'Bungee Spice', sans-serif; */
     
 }
-#Main__Body__Left__Box__DateName__Name sup,
-#Main__Body__Left__Box__DateName__Name sub,
-#Main__Body__Left__Box__DateName__Name strong{
-    font-family: 'Bungee Spice', sans-serif;
-    padding: 0 30px;
+#Main__Body__Left__Box__DateName__Name *{ 
+    font-family: "BungeeSpice-Regular","name", sans-serif;
+    padding: 0 10px;
 }
 #Main__Body__Left__Box__DateName__Name sup{
     display: flex;
     direction: rtl;
+
 }
 #Main__Body__Left__Box__DateName__Name sub{
     display: flex;
     direction: ltr;
+    position: absolute;
 }
 
 .main__body__left__box__info{
@@ -149,8 +152,7 @@ overflow: hidden;
 }
 .main__body__left__box__info__dashed{
     margin: 5px 0;
-}
-.main__body__left__box__info__BoomClock__Date{
+}.main__body__left__box__info__BoomClock__Date{
     width: 100%;
     font:italic small-caps bold 1.2em/20px Georgia, serif;
     
@@ -163,6 +165,7 @@ overflow: hidden;
     transition: .6s ease;
     
 }
+
 .main__body__left__box__info__BoomClock__Date td:hover{
     background-color: salmon;
 }
@@ -196,20 +199,23 @@ overflow: hidden;
     width: 60%;
     height:100%;
     /* background-color: blue; clear */
-    margin: 0 20px;
+    margin-left: 20px;
+    overflow: hidden;
     
 }
 /* ------------img----------- */
 .main__body__right__link__img{
     width: 100%;
     height: 100%;
-    background: url(../images/cat.jpg);
-    background-size: cover;
+    background: url(/images/cat.jpg)no-repeat;
+    background-size:cover ;
 }
 .main__body__right__link__img img{
     width: 100%; 
     height: 100%;
 }
+
+
 /* End .main__body__right */
 
 .footer{
@@ -217,7 +223,7 @@ overflow: hidden;
     justify-content:space-between ;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 26px;
     color: #fa0;
     padding: 7px 50px;
     background-color: #111;
